@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About This app</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Usage Guide</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="search-inp form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="data-city text-center mt-5 ">Weather of your City </h1>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card shadow">
+                    <div class="card-header fs-5 fw-semibold">Temperatures</div>
+                    <i class="fa-solid fa-temperature-three-quarters fs-1 mt-3"></i>
+                    <div class="card-body">
+                        <p class="temp card-text mb-0">Temperature is ( __ , __)</p>
+                        <p class="min-temp card-text mb-0">Min Temperature is ( __ , __)</p>
+                        <p class="max-temp card-text mb-0">Max Temperature is ( __ , __)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card shadow">
+                    <div class="card-header fs-5 fw-semibold">Humidity Info </div>
+                    <i class="fa-solid fa-cloud fs-1 mt-3"></i>
+                    <div class="card-body">
+                        <p class="wind-deg card-text mb-0">Wind Degree is ( __ , __)</p>
+                        <p class="feel-like card-text mb-0">Feels like ( __ , __)</p>
+                        <p class="humidity card-text mb-0">Humidity is ( __ , __)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 mb-4">
+                <div class="card border border-primary shadow shadow-bg-primary">
+                    <div class="card-header bg-primary text-white fs-5 fw-semibold">Wind Info </div>
+                    <i class="fa-solid fa-wind fs-1 mt-3"></i>
+                    <div class="card-body">
+                        <p class="wind-speed card-text mb-0">Wind Speed is ( __ , __)</p>
+                        <p class="sun-rise  card-text mb-0">Sunrise time is ( __ , __)</p>
+                        <p class="sun-set card-text mb-0">Sunset time is ( __ , __)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
