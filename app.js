@@ -13,13 +13,13 @@ let weather = {
         console.log(name, temp, temp_min, temp_max, feels_like, sunrise, sunset, humidity, deg, speed)
 
         document.querySelector('.data-city').innerHTML = 'Weather of ' + name;
-        document.querySelector('.temp').innerHTML = 'Temperature is ' + temp;
-        document.querySelector('.min-temp').innerHTML = 'Min temperature is ' + temp_min;
-        document.querySelector('.max-temp').innerHTML = 'Max temperature is ' + temp_max;
-        document.querySelector('.feel-like').innerHTML = 'feels like ' + feels_like;
-        document.querySelector('.humidity ').innerHTML = 'Humidity is ' + humidity;
-        document.querySelector('.wind-deg').innerHTML = 'Wind Degree is ' + deg;
-        document.querySelector('.wind-speed').innerHTML = 'Wind Speed is ' + speed;
+        document.querySelector('.temp').innerHTML = 'Temperature is ' + temp + 'K';
+        document.querySelector('.min-temp').innerHTML = 'Min temperature is ' + temp_min + 'K';
+        document.querySelector('.max-temp').innerHTML = 'Max temperature is ' + temp_max + 'K';
+        document.querySelector('.feel-like').innerHTML = 'feels like ' + feels_like + 'K';
+        document.querySelector('.humidity ').innerHTML = 'Humidity is ' + humidity + ' g.m-3';
+        document.querySelector('.wind-deg').innerHTML = 'Wind Degree is ' + deg + '°';
+        document.querySelector('.wind-speed').innerHTML = 'Wind Speed is ' + speed + 'm/s';
         document.querySelector('.sun-rise').innerHTML = 'Sunrise time is ' + sunrise;
         document.querySelector('.sun-set').innerHTML = 'sunset time is ' + sunset;
     },
